@@ -1,0 +1,172 @@
+* {
+    --VeryDarkBlue: hsl(217, 54%, 11%);
+    --VeryDarkBlueLine: rgb(47, 65, 91);
+    --VeryDarkBlueCard: hsl(216, 50%, 16%);
+    --letterColor: hsl(178, 100%, 50%);
+    --SpanColor: hsl(215, 51%, 70%);
+}
+
+
+.container-card {
+    width: 320px;
+    height: auto;
+    background-color: rgb(14, 27, 48);
+    border-radius: 35px;
+    padding: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-second-card {
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    background-color: var(--VeryDarkBlueCard);
+    border-radius: 25px;
+    padding: 15px;
+    margin: auto;
+}
+
+.section-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.img-view {
+    position: absolute;
+    opacity: 0;
+    transition: all .3s ease;
+    top: 135px;
+}
+
+.section-img:hover .img-view {
+    opacity: 1;
+}
+
+
+
+.img-sc {
+    width: 290px;
+    height: auto;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.img-sc:hover {
+    opacity: .9;
+}
+
+
+
+.primary-info {
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    color: white;
+    font-size: 18px;
+    margin: 7px 0px 12px 0px;
+}
+
+.primary-info p {
+    margin: 0;
+    transition: all .8s;
+    cursor: pointer;
+}
+
+.primary-info p:hover {
+    color: var(--letterColor);
+}
+
+.p-only {
+    margin: 17px 0px 27px 0px;
+    color: var(--SpanColor);
+}
+
+.footer-st-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2px 0px 20px 0px;
+}
+
+.footer-st-2 .icon-eth,
+.icon-time {
+    margin-right: 3px;
+    position: relative;
+    top: 3px;
+}
+
+.span-Eth {
+    color: var(--letterColor);
+}
+
+.span-time {
+    color: var(--SpanColor);
+}
+
+.hr-site {
+    background-color: var(--SpanColor);
+    margin: 8px;
+    height: 1px;
+    border: none;
+}
+
+.final-st {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.avatar-img {
+    width: 30px;
+    margin-right: 12px;
+    border: solid 2px white;
+    border-radius: 100%;
+}
+
+
+.info-user {
+    color: var(--SpanColor);
+}
+
+.negrita-font {
+    color: white;
+    transition: all .9s;
+    cursor: pointer;
+}
+
+.negrita-font:hover {
+    color: var(--letterColor);
+}
+
+@media (max-width: 320px) {
+    .container-card {
+        width: 290px;
+    }
+
+    .container-second-card {
+        width: 280px;
+    }
+
+    .img-sc {
+        width: 250px;
+    }
+
+    .img-view {
+        position: absolute;
+        top: 120px;
+        opacity: 0;
+        transition: all 3s ease;
+    }
+
+    .section-img:hover .img-view {
+        opacity: 1;
+    }
+}
